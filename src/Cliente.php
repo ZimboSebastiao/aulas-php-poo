@@ -7,6 +7,12 @@ class Cliente{
     public array $telefones;
     public string $senha;
 
+    // Métodos (ou comportamentos)
+
+    public function exibirdados():void {
+
+    }
+
 }
 
 
