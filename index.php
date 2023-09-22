@@ -14,6 +14,7 @@
         <li>Acesso direito às propriedades</li>
         <li>Atribuição e leitura de dados</li>
         <li>Chamada de método</li>
+        <li>Uso da palavra chave <code>this</code> para acessar recursoss dentro da própria classe</li>
     </ul>
 
 <?php 
@@ -23,12 +24,14 @@ $clienteA = new Cliente;
 $clienteB = new Cliente;
 
 // Acesso e atribuição
-$clienteA->nome = "Zimbo";
-$clienteB->nome = "Aicha";
 
+$clienteA->nome = "Zimbo";
 $clienteA->telefones = ["11-2387-9876", "11-5673-9876"];
 $clienteA->senha = password_hash("123abc", PASSWORD_DEFAULT);
-$clienteA->email = "gloria10@gmail.com"
+$clienteA->email = "gloria10@gmail.com";
+
+$clienteB->nome = "Aicha";
+
 ?>
 <hr>
 
@@ -50,7 +53,9 @@ $clienteA->email = "gloria10@gmail.com"
     <?php } ?>
 </ul>
 
-
+<h2>Acessando os dados através de um método</h2>
+<?=$clienteA->exibirdados()?>
+<?=$clienteB->exibirdados()?>
 
 <h3><?=$clienteB->nome?></h3>
 
