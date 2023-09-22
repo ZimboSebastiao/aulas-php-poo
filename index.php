@@ -14,7 +14,7 @@
         <li>Acesso direito às propriedades</li>
         <li>Atribuição e leitura de dados</li>
         <li>Chamada de método</li>
-        <li>Uso da palavra chave <code>this</code> para acessar recursoss dentro da própria classe</li>
+        <li>Uso da palavra chave <code>this</code> para acessar recursos dentro da própria classe</li>
     </ul>
 
 <?php 
