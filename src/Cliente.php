@@ -3,19 +3,16 @@
 class Cliente{
     // Propriedades (ou atributos)
     public string $nome;
-    public string $email = "Não informado!";
+    public string $email; 
     public array $telefones;
     public string $senha;
 
-    // Métodos (ou comportamentos)
+    // Método Construtor - Permite configurar a forma de inicialização do objeto, exigindo a atribuição de dados no momento de criar objeto/instância. O construtor é sempre chamado de forma automática assim que o objeto é criado.
 
-    public function exibirdados():void {
-        echo "<section>";
-        echo "<h2> $this->nome </h2>";
-        echo "<p> $this->email </p>";
-        echo "</section>";
-
-
+    public function __construct(string $nome, string $email) {
+        // Atribuindo os valores dos parâmetros às propriedades da classe Cliente. Usamos o $this para acessar as propriedades dessa classe
+        $this->nome = $nome;
+        $this->email = $email;
     }
 
 }
