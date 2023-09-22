@@ -28,11 +28,30 @@ $clienteB->nome = "Aicha";
 
 $clienteA->telefones = ["11-2387-9876", "11-5673-9876"];
 $clienteA->senha = password_hash("123abc", PASSWORD_DEFAULT);
+$clienteA->email = "gloria10@gmail.com"
 ?>
 <hr>
 
 <h2>Dados dos objetos (Acesso e leitura)</h2>
+
 <h3><?=$clienteA->nome?></h3>
+<p>Email: <?=$clienteA->email?></p>
+<!-- Versão 1 para acessar/ler dados de um array -->
+<p><?=$clienteA->telefones[0]?></p>
+<p><?=$clienteA->telefones[1]?></p>
+
+<!-- Versão 2 para acessar/ler dados de um array -->
+<p><?=implode(", ", $clienteA->telefones)?></p>
+
+<!-- Versão 3 para acessar/ler dados de um array -->
+<ul>
+    <?php foreach ($clienteA->telefones as $telefone) { ?>
+    <li><?=$telefone?></li>  
+    <?php } ?>
+</ul>
+
+
+
 <h3><?=$clienteB->nome?></h3>
 
 
