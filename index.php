@@ -30,6 +30,8 @@ $clienteA->setNome("João Paulo")
 
 
 ?>
+<!-- Usando o getter para ler/acessar dados privados -->
+<p>Nome: <?= $clienteA->getNome() ?></p>
 <pre><?= var_dump($clienteA) ?></pre>
 </body>
 </html>
