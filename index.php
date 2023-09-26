@@ -20,6 +20,9 @@
 
     <ul>
         <li>Herança (Super Classe e Sub Classe)</li>
+        <li>Métodos/propriedades protegidos (acessivéis apenas pela clase em que foram definidos e pelas subclasses)</li>
+        <li>Classe Abstrata</li>
+        <li>Classe Final</li>
         
     </ul>
 <?php 
