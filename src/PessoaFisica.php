@@ -4,7 +4,7 @@ class PessoaFisica {
     private int $idade;
     private string $cpf; 
 
-    // Getters e Setters IDADE
+    // Getters e Setters - IDADE
     public function getIdade(): int
     {
         return $this->idade;
@@ -18,7 +18,7 @@ class PessoaFisica {
         return $this;
     }
 
-    // Getters e Setters CPF
+    // Getters e Setters - CPF
     public function getCpf(): string
     {
         return $this->cpf;
