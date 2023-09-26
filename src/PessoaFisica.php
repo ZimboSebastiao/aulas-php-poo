@@ -4,12 +4,17 @@ class PessoaFisica extends Cliente{
     private int $idade;
     private string $cpf; 
 
+
+    public function __construct()
+    {
+        
+    }
+
     // Getters e Setters - IDADE
     public function getIdade(): int
     {
         return $this->idade;
     }
-
 
     public function setIdade(int $idade): self
     {

@@ -5,6 +5,7 @@ class Cliente{
     private string $nome;
     private string $email; 
     private string $senha;
+    private string $situacao;
 
     // Métodos getters e setters
 
@@ -33,6 +34,18 @@ class Cliente{
     }
 
 
+    // Visibilidade Protected: Estes getters e setters poderão ser uados APENAS aqui (class Cliente) e nas subClasses (PessoaFisica e PessoaJuridica)
+    protected function getSituacao(): string
+    {
+        return $this->situacao;
+    }
+
+    protected function setSituacao(string $situacao): self
+    {
+        $this->situacao = $situacao;
+
+        return $this;
+    }
 }
 
 
