@@ -5,9 +5,11 @@ class PessoaFisica extends Cliente{
     private string $cpf; 
 
 
+    // Construtor 
     public function __construct()
     {
-        
+        // Acessando o método setter PROTEGIDO (existente em Cliente)
+        $this->setSituacao("Normal");
     }
 
     // Getters e Setters - IDADE
