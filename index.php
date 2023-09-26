@@ -65,8 +65,31 @@
 
 
 <?php 
-// require_once "src/Cliente.php";
+require_once "src/MEI.php";
 
+$clienteMei = new MEI;
+$clienteMei->setNome("Marina");
+$clienteMei->setAnoFundacao(2023);
+$clienteMei->setNomeFantasia("Tanaka Emprendimentos");
+$clienteMei->setAreaDeAtuacao("Ervas medicinais");
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+// o erro é devido ao facto da classe Cliente ser uma class abstrata
 $clienteGenerico = new Cliente;
 
 ?>
