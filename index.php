@@ -26,23 +26,23 @@
         
     </ul>
 <?php 
-require_once "src/PessoaFisica.php";
-require_once "src/PessoaJuridica.php";
+    require_once "src/PessoaFisica.php";
+    require_once "src/PessoaJuridica.php";
 
 
-$clientePF = new PessoaFisica;
+    $clientePF = new PessoaFisica;
 
-$clientePF->setNome("Amanda");
-$clientePF->setEmail("amanda@gmail.com");
-$clientePF->setIdade(23);
-$clientePF->setCpf("287.789.907-76");
+    $clientePF->setNome("Amanda");
+    $clientePF->setEmail("amanda@gmail.com");
+    $clientePF->setIdade(23);
+    $clientePF->setCpf("287.789.907-76");
 
-$clientePJ = new PessoaJuridica;
-$clientePJ->setNome("Beltrano S/A");
-$clientePJ->setEmail("beltrano@gmail.com");
-$clientePJ->setAnoFundacao(2000);
-$clientePJ->setCnpj("32.088.0001/000.41");
-$clientePJ->setNomeFantasia("Bla Bla Bla Informática");
+    $clientePJ = new PessoaJuridica;
+    $clientePJ->setNome("Beltrano S/A");
+    $clientePJ->setEmail("beltrano@gmail.com");
+    $clientePJ->setAnoFundacao(2000);
+    $clientePJ->setCnpj("32.088.0001/000.41");
+    $clientePJ->setNomeFantasia("Bla Bla Bla Informática");
 
 
 ?>
@@ -61,5 +61,16 @@ $clientePJ->setNomeFantasia("Bla Bla Bla Informática");
 
 <pre><?=var_dump($clientePF)?></pre>
 <pre><?=var_dump($clientePJ)?></pre>
+
+
+
+<?php 
+// require_once "src/Cliente.php";
+
+$clienteGenerico = new Cliente;
+
+?>
+
+<pre><?=var_dump($clienteGenerico)?></pre>
 </body>
 </html>
