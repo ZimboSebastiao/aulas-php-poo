@@ -21,8 +21,8 @@
     <ul>
         <li>Herança (Super Classe e Sub Classe)</li>
         <li>Métodos/propriedades protegidos (acessivéis apenas pela clase em que foram definidos e pelas subclasses)</li>
-        <li>Classe Abstrata</li>
-        <li>Classe Final</li>
+        <li>Classe Abstrata: Não permite instâncias/objetos, serve apenas de modelo para subclasses</li>
+        <li>Classe Final: Não permite herança, ou seja, não aceita a criação de subclasses</li>
         
     </ul>
 <?php 
@@ -76,6 +76,7 @@ $clienteMei->setAreaDeAtuacao("Ervas medicinais");
 
 ?>
 
+<pre><?=var_dump($clienteMei)?></pre>
 
 
 

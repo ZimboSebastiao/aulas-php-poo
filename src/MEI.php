@@ -1,7 +1,8 @@
 <?php 
 require_once "PessoaJuridica.php";
 
-class MEI extends PessoaJuridica {
+// Classe Final: Não permite estender recursos para novas subclasses, ou seja, não permite herança. 
+final class MEI extends PessoaJuridica {
     private string $areaDeAtuacao;
 
 
