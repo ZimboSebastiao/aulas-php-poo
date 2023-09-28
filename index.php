@@ -11,7 +11,9 @@
     <h2>Assuntos abordados:</h2>
 
     <ul>
-
+        <li>Polimorfismp</li>
+        <li>Sobreposição de métodos</li>
+        <li>Uso do <code>parent</code> para acessar superClasse</li>
     </ul>
     <hr>
 
