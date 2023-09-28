@@ -19,8 +19,13 @@
     <h2>Assuntos abordados:</h2>
 
     <ul>
-        
+
     </ul>
+    <hr>
+
+    <h2>Sáida de dados</h2>
+
+
 <?php 
     require_once "src/PessoaFisica.php";
     require_once "src/PessoaJuridica.php";
@@ -43,10 +48,39 @@
 
 ?>
 
+<?php 
+    require_once "src/PessoaFisica.php";
+    require_once "src/PessoaJuridica.php";
 
 
+    $clientePF = new PessoaFisica;
+
+    $clientePF->setNome("Amanda");
+    $clientePF->setEmail("amanda@gmail.com");
+    $clientePF->setIdade(23);
+    $clientePF->setCpf("287.789.907-76");
+
+    $clientePJ = new PessoaJuridica;
+    $clientePJ->setNome("Beltrano S/A");
+    $clientePJ->setEmail("beltrano@gmail.com");
+    $clientePJ->setAnoFundacao(2000);
+    $clientePJ->setCnpj("32.088.0001/000.41");
+    $clientePJ->setNomeFantasia("Bla Bla Bla Informática");
 
 
+?>
+    <section><?=$clientePF->exibirDados()?></section>
+    <section><?=$clientePJ->exibirDados()?></section>
+
+
+<ul class="formart">
+    <h2>Cliente Pessoa Jurídica</h2>
+    <li>Nome: <?=$clientePJ->getNome()?></li>
+    <li>E-mail: <?=$clientePJ->getEmail()?></li>
+    <li>Ano: <?=$clientePJ->getAnoFundacao()?></li>
+    <li>CNPJ: <?=$clientePJ->getCnpj()?></li>
+    <li>Nome Fantasia: <?=$clientePJ->getNomeFantasia()?></li>
+</ul>
 
 
 
