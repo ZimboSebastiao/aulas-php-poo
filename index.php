@@ -13,13 +13,25 @@
     <ul>
         <li>Propriedades e métodos estáticos</li>
         <li>Acesso direito sem necessidade de objetos/instâncias</li>
+        <li>Uso do <code>self</code> para acesso (dentro da classe) aos recursos estáticos</li>
     </ul>
     <hr>
 
     <h2>Sáida de dados</h2>
 
+<?php 
+require_once "src/PessoaFisica.php";
+require_once "src/Utilitarios.php";
+$cliente1 = new PessoaFisica;
 
+$cliente1->setNome("João");
+$cliente1->setIdade(71);
 
+// Usando os recursos estáticos
+Utilitarios::obterData();
+?>
+
+<h2>Atendimentos do dia: <?=Utilitarios::$dataAtual?></h2>
 
 
 </body>
