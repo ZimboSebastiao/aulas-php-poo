@@ -4,14 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo 6</title>
-    <style>
-        .formart {
-            text-align: center;
-            list-style: none;
-            text-decoration: underline;
-        }
-        li {font-weight: bold;}
-    </style>
 </head>
 <body>
     <h1>PHP com POO - Exemplo 6</h1>
@@ -73,14 +65,6 @@
     <section><?=$clientePJ->exibirDados()?></section>
 
 
-<ul class="formart">
-    <h2>Cliente Pessoa Jurídica</h2>
-    <li>Nome: <?=$clientePJ->getNome()?></li>
-    <li>E-mail: <?=$clientePJ->getEmail()?></li>
-    <li>Ano: <?=$clientePJ->getAnoFundacao()?></li>
-    <li>CNPJ: <?=$clientePJ->getCnpj()?></li>
-    <li>Nome Fantasia: <?=$clientePJ->getNomeFantasia()?></li>
-</ul>
 
 
 
