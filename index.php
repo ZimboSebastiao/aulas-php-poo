@@ -27,11 +27,25 @@ $cliente1 = new PessoaFisica;
 $cliente1->setNome("João");
 $cliente1->setIdade(71);
 
+$cliente2 = new PessoaFisica;
+$cliente2->setNome("Enzo");
+$cliente2->setIdade(20);
+
 // Usando os recursos estáticos
 Utilitarios::obterData();
 ?>
 
 <h2>Atendimentos do dia: <?=Utilitarios::$dataAtual?></h2>
+
+<h3>Cliente: <?=$cliente1->getNome()?></h3>
+<p>Tipo de atendimento: 
+    <?=Utilitarios::definirAtendimento(($cliente1->getIdade()))?>
+</p>
+
+<h3>Cliente: <?=$cliente2->getNome()?></h3>
+<p>Tipo de atendimento: 
+    <?=Utilitarios::definirAtendimento(($cliente2->getIdade()))?>
+</p>
 
 
 </body>
