@@ -1,0 +1,9 @@
+{
+    "name" : "zimbo/aulas-php-poo",
+    "description" : "Exemplo de projeto PHP com orientação a objetos e com classes gerenciadas com o composer.",
+    "autoload" : {
+        "psr-4" : {
+            "Zimbo\\" : "src/"
+        }
+    }
+}
