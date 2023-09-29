@@ -13,8 +13,7 @@
     <ul>
         <li>Composer: Gerenciador de dependência PHP</li>
         <li>Configurar o projeto com Composer usando <code>composer.json</code></li>
-        
-        
+        <li>Autoload de classes evitando muitos requires e/ou require manuais</li>
     </ul>
     <hr>
 
