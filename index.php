@@ -52,14 +52,14 @@ $pagamentoPrestadordor = new PrestadorPagamento;
 // use Zimbo\MEI;
 
 // Use com uma lista de classe
-use Zimbo\{MEI, PessoaFisica, PessoaJuridica};
+use Zimbo\{MEI, PessoaFisica as PF, PessoaJuridica as PJ};
 
 require_once "src/MEI.php";
 require_once "src/PessoaFisica.php";
 require_once "src/PessoaJuridica.php";
 
-$clientePF = new PessoaFisica;
-$clientePJ = new PessoaJuridica;
+$clientePF = new PF;
+$clientePJ = new PJ;
 $clienteMei = new MEI;
 
 $clientePF->setNome("Jorge Camargo");
