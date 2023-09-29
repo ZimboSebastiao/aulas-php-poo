@@ -44,8 +44,57 @@ $pagamentoPrestadordor = new PrestadorPagamento;
 
 ?>
 
-<pre><?=var_dump($pagamentoFornecedor)?></pre>
-<pre><?=var_dump($pagamentoPrestadordor)?></pre>
+<!-- Exercício -->
+
+<?php 
+// use Zimbo\PessoaFisica;
+// use Zimbo\PessoaJuridica;
+// use Zimbo\MEI;
+
+// Use com uma lista de classe
+use Zimbo\{MEI, PessoaFisica, PessoaJuridica};
+
+require_once "src/MEI.php";
+require_once "src/PessoaFisica.php";
+require_once "src/PessoaJuridica.php";
+
+$clientePF = new PessoaFisica;
+$clientePJ = new PessoaJuridica;
+$clienteMei = new MEI;
+
+$clientePF->setNome("Jorge Camargo");
+$clientePF->setEmail("jorgecamargo@gmail.com");
+
+$clientePJ->setNome("Vanessa Camargo");
+$clientePJ->setEmail("vanessacamargo@gmail.com");
+
+$clienteMei->setNome("Ana Camargo");
+$clienteMei->setEmail("anacamargo@gmail.com");
+$clienteMei->setAreaDeAtuacao("Analista de Qualidade");
+
+
+
+?>
+<h2>Pessoa Física</h2>
+<h4><?=$clientePF->getNome()?></h4>
+<p><?=$clientePF->getEmail()?></p>
+<hr>
+
+<h2>Pessoa Jurídica</h2>
+<h4><?=$clientePJ->getNome()?></h4>
+<p><?=$clientePJ->getEmail()?></p>
+<hr>
+
+<h2>MEI</h2>
+<h4><?=$clienteMei->getNome()?></h4>
+<p><?=$clienteMei->getEmail()?></p>
+<p><?=$clienteMei->getAreaDeAtuacao()?></p>
+<hr>
+
+<pre><?=var_dump($clientePF)?></pre>
+<pre><?=var_dump($clientePJ)?></pre>
+<pre><?=var_dump($clienteMei)?></pre>
+
 
 
 

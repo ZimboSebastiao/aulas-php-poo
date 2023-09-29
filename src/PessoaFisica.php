@@ -1,7 +1,7 @@
 <?php 
+namespace Zimbo;
 require_once "Cliente.php";
 
-namespace Zimbo;
 class PessoaFisica extends Cliente{
     private int $idade;
     private string $cpf; 

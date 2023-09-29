@@ -1,7 +1,7 @@
 <?php
+namespace Zimbo;
 require_once "Cliente.php";
 
-namespace Zimbo;
 class PessoaJuridica extends Cliente {
     private int $anoFundacao;
     private string $cnpj;
