@@ -1,0 +1,12 @@
+<?php 
+
+// fornecedores
+class Pagamento {
+
+}
+
+
+
+
+
+?>

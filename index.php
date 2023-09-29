@@ -19,7 +19,15 @@
     </ul>
     <hr>
 
-    <h2>Sáida de dados</h2>
+<?php 
+// Só de fazer o require/importação das classes, já dá erro no servidor devido a terem o mesmo nome
+require_once "src/fornecedores/Pagamento.php";
+require_once "src/prestadores/Pagamento.php";
+
+
+
+
+?>
 
 
 
