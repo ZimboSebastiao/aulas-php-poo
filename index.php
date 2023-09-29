@@ -14,21 +14,28 @@
         <li>Namespaces: agrupamento de recursos (classes, funções, constantes)</li>
         <li>Prevenção de conflitos entre classes de mesmo nome</li>
         <li>Configurar e usar <code>namespaces</code> e <code>alias</code></li>
-        <li></li>
+        
         
     </ul>
     <hr>
 
 <?php 
-// Só de fazer o require/importação das classes, já dá erro no servidor devido a terem o mesmo nome
+// Só de fazer o require/importação das classes (SEM NAMESPACES), já dá erro no servidor devido a terem o mesmo nome
+
+use Fornecedor\Pagamento;
+
 require_once "src/fornecedores/Pagamento.php";
 require_once "src/prestadores/Pagamento.php";
 
-
+// Forma 1 de usar classe com namespaces
+$pagamentoFornecedor = new Fornecedor\Pagamento;
+$pagamentoPrestadordor = new Prestador\Pagamento;
 
 
 ?>
 
+<pre><?=var_dump($pagamentoFornecedor)?></pre>
+<pre><?=var_dump($pagamentoPrestadordor)?></pre>
 
 
 
