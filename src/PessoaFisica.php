@@ -1,6 +1,6 @@
 <?php 
 namespace Zimbo;
-require_once "Cliente.php";
+
 
 class PessoaFisica extends Cliente{
     private int $idade;

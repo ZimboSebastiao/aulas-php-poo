@@ -1,6 +1,5 @@
 <?php 
 namespace Zimbo;
-require_once "PessoaJuridica.php";
 
 // Classe Final: Não permite estender recursos para novas subclasses, ou seja, não permite herança. 
 final class MEI extends PessoaJuridica {
