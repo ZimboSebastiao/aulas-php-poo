@@ -22,7 +22,7 @@
 
 use Fornecedor\Pagamento;
 use Prestador\Pagamento as PrestadorPagamento;
-use Zimbo\{MEI, PessoaFisica as PF, PessoaJuridica as PJ};
+use Zimbo\{MEI, PessoaFisica as PF, PessoaJuridica as PJ, Escola};
 
 require_once "vendor/autoload.php";
 
@@ -38,11 +38,13 @@ $pagamentoPrestadordor = new PrestadorPagamento;
 $clientePF = new PF;
 $clientePJ = new PJ;
 $clienteMei = new MEI;
+$escola = new Escola;
 
 $clientePF->setNome("Jorge Camargo");
 $clientePJ->setEmail("vanessacamargo@gmail.com");
 $clienteMei->setAreaDeAtuacao("Analista de Qualidade");
 
+var_dump($escola)
 
 
 ?>
