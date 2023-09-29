@@ -11,9 +11,8 @@
     <h2>Assuntos abordados:</h2>
 
     <ul>
-        <li>Namespaces: agrupamento de recursos (classes, funções, constantes)</li>
-        <li>Prevenção de conflitos entre classes de mesmo nome</li>
-        <li>Configurar e usar <code>namespaces</code> e <code>alias</code></li>
+        <li>Composer: Gerenciador de dependência PHP</li>
+        <li>Configurar o projeto com Composer usando <code>composer.json</code></li>
         
         
     </ul>
