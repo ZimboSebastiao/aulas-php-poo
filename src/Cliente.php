@@ -1,5 +1,6 @@
 <?php 
 
+namespace Zimbo;
 abstract class Cliente{
     // Propriedades (ou atributos)
     private string $nome;
